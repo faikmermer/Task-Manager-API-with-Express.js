@@ -1,0 +1,21 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const TaskControllers_1 = require("../controllers/TaskControllers");
+const TaskControllers_2 = require("../controllers/TaskControllers");
+const TaskMidd_1 = require("../middleware/TaskMidd");
+const TaskControllers_3 = require("../controllers/TaskControllers");
+const TaskControllers_4 = require("../controllers/TaskControllers");
+const TaskControllers_5 = require("../controllers/TaskControllers");
+const TaskControllers_6 = require("../controllers/TaskControllers");
+const router = express_1.default.Router();
+router.post("/tasks", TaskMidd_1.validTask, TaskControllers_1.addTask);
+router.get("/tasks", TaskControllers_2.getTask);
+router.get("/tasks/:id", TaskControllers_3.getId);
+router.put("/tasks/:id", TaskMidd_1.validTask, TaskControllers_4.putTask);
+router.delete("/tasks/:id", TaskControllers_5.deleteTask);
+router.patch("/tasks/:id/status", TaskControllers_6.patchTask);
+exports.default = router;

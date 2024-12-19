@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Buy groceries",
+    "description": "milk, bread, cheese",
+    "category": "Personal",
+    "dueDate": "2024-10-15",
+    "status": "pending",
+    "id": 1
+  },
+  {
+    "title": "Finish project",
+    "description": "Complete by friday",
+    "category": "Work",
+    "dueDate": "2025-10-14",
+    "status": "completed",
+    "id": 2
+  }
+]
